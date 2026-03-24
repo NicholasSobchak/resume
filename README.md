@@ -1,2 +1,2 @@
-# R-sum-
-Nicholas Sobchak's Résumé
+# Résumé
+Check out Nicholas' Résumé!
