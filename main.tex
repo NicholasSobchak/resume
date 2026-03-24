@@ -1,12 +1,15 @@
 \documentclass[11pt]{article}
 
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=0.8in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{4pt}
+\setlength{\parskip}{3pt}
+\setlist[itemize]{noitemsep, topsep=2pt}
+
+\pagestyle{empty}
 
 % Section formatting
 \titleformat{\section}{
@@ -22,49 +25,48 @@
 Eldersburg, MD 21784 \\
 443.586.6341 \;|\; nlsobchak@gmail.com \\
 \href{https://linkedin.com/in/nicholas-sobchak-b4aa2a329}{linkedin.com/in/nicholas-sobchak-b4aa2a329} \;|\;
-\href{https://github.com/NicholasSobchak}{github.com/NicholasSobchak}
+\href{https://github.com/NicholasSobchak}{github.com/NicholasSobchak} \\
+U.S. Citizen \;|\; Eligible for U.S. Security Clearance
 
 %-------------------------
-\section*{SUMMARY}
-Computer Science student at UMBC seeking internship opportunities in software development or data science to contribute to innovative projects. Knowledgeable in C++, Python, and Java with experience in algorithms, object-oriented programming and data structure implementation.
+\section*{EXPERIENCE}
+\textbf{ZipTip} \hfill Dec 2025—Present\\
+\textit{Founding Engineer - Software Developer}
+\begin{itemize}
+  \item Developing software solutions and contributing to application features.
+  \item Collaborating with team members using Git-based workflows.
+\end{itemize}
 
+%-------------------------
 %-------------------------
 \section*{EDUCATION}
-\textbf{University of Maryland, Baltimore County, MD} \\
-Expected B.S. in Computer Science, May 2027
+\textbf{University of Maryland, Baltimore County, MD} \hfill May 2027\\
+Expected B.S. in Computer Science
 
-\textbf{Carroll Community College, MD} \\
-A.A. in Computer Science, GPA: 3.6 (Overall), 4.0 (Major), Sept 2023—May 2025
+\textbf{Carroll Community College, MD} \hfill Sept 2023—May 2025\\
+A.A. in Computer Science, GPA: 3.6 (Overall), 4.0 (Major)
 
 %-------------------------
 \section*{SKILLS}
-Python (2 yrs) \;|\; C++ (1 yr) \;|\; Java (1 yr) \;|\; Visual Studio Code (1 yr) \;|\; GitHub (1 yr) \;|\; Linux SSH (1 yr) \;|\; Valgrind (1 yr)\\
-Team Collaboration \;|\; Strong Written and Oral Communication \;|\; Detail-Oriented \;|\; Curiosity \;|\; Willing to Learn \;|\; Critical Thinking
+Technical: Python (3 yrs), C++ (1 yr), SQL (1 yr) \\
+Tools: GitHub (1 yr), Git (1 yr), Linux (1 yr), Vim (1 yr), Tmux (1 yr), CMake (1 yr), Valgrind (1 yr) \\
+Frameworks/Libraries: Crow (1 yr), Catch2 (1 yr) \\
+Cloud: AWS Lambda, DynamoDB, boto3
 
 %-------------------------
-\section*{PROJECTS}
-
-\textbf{Natural Language Processing:} Developed a custom text processing system combining multiple self-balancing tree data structures to efficiently store and analyze large text datasets. Implemented a Splay Tree to organize books by title, where each book node contained an embedded AVL Tree storing every word in the book. The structure allows for fast lookups. Built functionality to:
-\begin{itemize}[leftmargin=*]
-  \item Parse book data from a database and perform text-analysis queries such as counting word occurrences.
-  \item Insert titles, authors, and thousands of words into the structure while maintaining balance and optimal search time.
-\end{itemize}
-
-\textbf{Capstone Game Projects (Python / Pygame):} Developed a Zelda-inspired top-down game and a Mario-inspired side-scroller, implementing game mechanics:
-\begin{itemize}[leftmargin=*]
-  \item Collision detection and sprite management.
-  \item Pygame framework—using a game engine library to build graphics, handle keyboard input, sprites, and the game loop.
-\end{itemize}
-
 %-------------------------
-\section*{AWARDS}
-\textbf{Hubey Baker Character Award (2024):} Recognized for outstanding character and sportsmanship in high school hockey. \\
-\textbf{Maryland Student Hockey League Scholarship:} Awarded college scholarship for performance in the Monocacy Valley Hockey League. \\
-\textbf{Encore Community Orchestra Scholarship:} Honored for exemplary character and a consistently strong work ethic.
+\section*{PET PROJECTS}
+
+\textbf{QuickQuill (C++17, Crow, SQLite)} \hfill Dec 2025-Present\\
+Built a trie-based dictionary and spell-check backend with REST API and SQLite storage, including a JSONL-to-SQLite ingestion pipeline, optimized queries for fast read performance, and unit tests with Catch2 to ensure correctness. Developed REST endpoints (\texttt{/api/word/<word>}) to serve both CLI and web clients.
+\begin{itemize}
+  \item Implemented fast word lookup and autocomplete using a trie-based data structure.
+  \item Built REST endpoints to serve both CLI and web clients efficiently.
+\end{itemize}
 
 %-------------------------
 \section*{EXTRACURRICULARS \& LEADERSHIP}
-\textbf{Ice Hockey} — Captain; Two-time State Champion; Two-time National Qualifier; demonstrated leadership, teamwork, and resilience.\\
+\textbf{Ice Hockey} — Captain; Two-time State Champion; Two-time National Qualifier; demonstrated leadership and teamwork. \\
 \textbf{Orchestra} — Section Leader; developed collaboration, discipline, and adaptability.
 
 \end{document}
