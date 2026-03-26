@@ -6,7 +6,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{xcolor}
 
-\definecolor{accent}{RGB}{0, 51, 102} % dark navy blue
+\definecolor{accent}{RGB}{75, 0, 90} % dark navy blue
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{3pt}
@@ -25,7 +25,7 @@
 % Header
 %-------------------------
 {\LARGE \textbf{\color{accent} NICHOLAS SOBCHAK}}\\
-Eldersburg, MD 21784 \textbar\ Phone: 443-586-6341 \textbar\ Email: nlsobchak@gmail.com\\
+Eldersburg, MD 21784 \textbar\ 443.586.6341 \textbar\ nlsobchak@gmail.com\\
 \underline{\href{https://linkedin.com/in/nicholas-sobchak-b4aa2a329}{LinkedIn}} \textbar\ 
 \underline{\href{https://github.com/NicholasSobchak}{GitHub}} \textbar\ 
 U.S. Citizen, Eligible for U.S. Security Clearance
@@ -42,40 +42,37 @@ U.S. Citizen, Eligible for U.S. Security Clearance
 \end{itemize}
 
 %-------------------------
+\section*{SKILLS}
+\textbf{C++:} Crow, Catch2, SQL, JSONL \\
+\textbf{Python:} AWS (Lambda, SAM CLI), boto3, Cognito, pytest, requests, JSON \\
+\textbf{Databases:} SQLite, DynamoDB \\
+\textbf{Tools:} GitHub, Linux, Vim, Tmux, CMake, Docker, Valgrind
+
+%-------------------------
+\section*{
+TECHNICAL PROJECTS 
+{\normalfont\normalsize\color{black}\underline{\href{https://github.com/NicholasSobchak}{GitHub}}}
+}
+\noindent\textbf{QuickQuill} -- \textit{C++17, Crow, SQLite, Catch2} \hfill Dec 2025 -- Present
+\vspace{-2pt} % reduce space between heading and bullets
+\begin{itemize}[label=\texttt{\textbf{>}}]
+  \item Built a quick search dictionary \textbf{(LINK HERE)} as a full stack application, leveraging C++ to create a high-performance autocomplete feature using a Trie data structure, achieving \textbf{sub-XXXms} response times for large datasets with over 1.4 million words with stored definitions, parts of speech, synonyms, antonyms, examples, and etymologies.
+  \item Built a RESTful backend using Crow web framework to serve web-based clients. Constructed automated unit and end-to-end tests in a CI/CD pipeline using GitHub Actions.
+  \item Utilized Python to populate the SQL database, and designed a database class for real-time data management and optimized database queries for very high-performance word lookup (1000+ QPS).
+\end{itemize}
+
+%-------------------------
+\section*{LEADERSHIP AND INTERESTS}
+\textbf{Ice Hockey} \texttt{\textbf{>}} Team Captain; Two-time State Champion; Two-time National Qualifier
+
+\textbf{Orchestra} \texttt{\textbf{>}} Section Leader; demonstrated collaboration, discipline, and adaptability
+
+%-------------------------
 \section*{EDUCATION}
 \textbf{University of Maryland, Baltimore County} \hfill Aug 2025 -- May 2027\\
 \textit{Bachelor of Science in Computer Science (Expected)}
 
 \textbf{Carroll Community College} \hfill Sept 2023 -- May 2025\\
 \textit{Associate of Arts in Computer Science, GPA: 3.6 Overall, 4.0 Major}
-
-%-------------------------
-\section*{SKILLS}
-\textbf{C++:} Crow, Catch2, SQL, JSONL \\
-\textbf{Python:} AWS (Lambda, SAM CLI), boto3, Cognito, pytest, requests, JSON \\
-\textbf{Database:} SQLite, DynamoDB \\
-\textbf{Tools:} GitHub, Linux, Vim, Tmux, CMake, Docker, Valgrind
-
-%-------------------------
-\section*{PROJECTS}
-
-\noindent\textbf{QuickQuill} -- \textit{C++17, Crow, SQLite, Catch2} \hfill Dec 2025 -- Present
-\vspace{-2pt} % reduce space between heading and bullets
-\begin{itemize}[label=\texttt{\textbf{>}}]
-  \item Designed and implemented a trie-based data structure to increase fast autocomplete functionality in \textbf{$<$XXXms}.
-  \item Built a RESTful backend in C++ leveraging the Crow web framework and SQLite for persistent storage and built API endpoints to serve both command-line and web-based clients.
-  \item Optimized database queries for very high-performance word lookup \textbf{(1000+ QPS)}.
-  \item Implemented automated testing of core functionality using Catch2.
-  \item Developed a JSONL-to-SQLite data ingestion pipeline for efficient data population.
-  \item Managed the project with Git, implementing branch-based workflow and code review practices.
-\end{itemize}
-
-%-------------------------
-\section*{LEADERSHIP AND ACTIVITIES}
-\textbf{Ice Hockey} \\
-Team Captain; Two-time State Champion; Two-time National Qualifier
-
-\textbf{Orchestra} \\
-Section Leader; demonstrated collaboration, discipline, and adaptability
 
 \end{document}
