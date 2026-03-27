@@ -43,9 +43,9 @@ U.S. Citizen, Eligible for U.S. Security Clearance
 
 %-------------------------
 \section*{SKILLS}
-\textbf{C++:} Crow, Catch2, SQL, JSONL \\
+\textbf{C++:} Crow, Catch2, SQLite, JSONL \\
 \textbf{Python:} AWS (Lambda, SAM CLI), boto3, Cognito, pytest, requests, JSON \\
-\textbf{Databases:} SQLite, DynamoDB \\
+\textbf{Databases:} SQL, DynamoDB \\
 \textbf{Tools:} GitHub, Linux, Vim, Tmux, CMake, Docker, Valgrind
 
 %-------------------------
@@ -53,13 +53,14 @@ U.S. Citizen, Eligible for U.S. Security Clearance
 TECHNICAL PROJECTS 
 {\normalfont\normalsize\color{black}\underline{\href{https://github.com/NicholasSobchak}{GitHub}}}
 }
-\noindent\textbf{QuickQuill} -- \textit{C++17, Crow, SQLite, Catch2} \hfill Dec 2025 -- Present
+\noindent\textbf{QuickQuill} -- \textit{C++17, Crow, SQLite3, Catch2} \hfill Dec 2025 -- Present
 \vspace{-2pt} % reduce space between heading and bullets
 \begin{itemize}[label=\texttt{\textbf{>}}]
-  \item Built a quick search dictionary \textbf{(LINK HERE)} as a full stack application, leveraging C++ to create a high-performance autocomplete feature using a Trie data structure, achieving \textbf{sub-XXXms} response times for large datasets with over 1.4 million words with stored definitions, parts of speech, synonyms, antonyms, examples, and etymologies.
-  \item Built a RESTful backend using Crow web framework to serve web-based clients. Constructed automated unit and end-to-end tests in a CI/CD pipeline using GitHub Actions.
-  \item Utilized Python to populate the SQL database, and designed a database class for real-time data management and optimized database queries for very high-performance word lookup (1000+ QPS).
-\end{itemize}
+  \item Built a 1.4 million word dictionary API with a Trie-based backend in C++, supporting a \texttt{\textbf{sub-XXms}} autocomplete feature. Developed a RESTful backend using Crow web framework to serve web-based clients \textbf{(LINK HERE)}.
+  \item Utilized Python to populate the SQL database, and designed a database class for real-time data management and optimized database queries. 
+  \item Implemented in-memory caching, reducing repeated query latency from $>200$ms to $<0.18$ms ($\sim$1350x speedup) for popular queries.
+  \item Engineered a memory-safe Trie backend with smart pointers. Constructed automated unit and end-to-end tests in a CI/CD pipeline using GitHub Actions.
+\end{itemize} 
 
 %-------------------------
 \section*{LEADERSHIP AND INTERESTS}
