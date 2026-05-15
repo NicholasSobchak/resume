@@ -5,8 +5,11 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{xcolor}
+\usepackage{url}
+
 
 \definecolor{accent}{RGB}{75, 0, 90} % dark navy blue
+\urlstyle{same}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{3pt}
@@ -35,32 +38,33 @@ U.S. Citizen, Eligible for U.S. Security Clearance
 \textbf{Founding Software Developer -- ZipTip} \hfill Dec 2025 -- Present\\
 \textit{Remote / Westminster, MD}
 \begin{itemize}[label=\texttt{\textbf{>}}]
-  \item Developed and implemented authentication and authorization services for ZipTip and Stripe accounts using Cognito.
-  \item Integrated RESTful APIs for seamless communication between frontend and backend services using boto3.
-  \item Built and ran automated tests for backend services using pytest.
-  \item Used AWS SAM to locally test and validate Lambda functions before deployment.
+  \item Built and developed lambda functions for user authentication, account creation \& management, payment processing, and data retrieval. 
+  \item Created authentication and authorization services for ZipTip and Stripe accounts using Cognito.
+  \item Integrated RESTful APIs for communication between frontend and backend services using boto3.
+  \item Built unit \& integration tests using pytest, automated AWS SAM deployment for prod and dev environments.
 \end{itemize}
 
 %-------------------------
 \section*{SKILLS}
 \textbf{C++:} Crow, Catch2, SQLite, JSONL \\
-\textbf{Python:} AWS (Lambda, SAM CLI), boto3, Cognito, pytest, requests, JSON \\
+\textbf{Python:} AWS (Lambda, SAM CLI), boto3, Cognito, pytest, JSON \\
 \textbf{JavaScript:} Node.js, Vite, ESLint, Prettier \\
 \textbf{Databases:} SQL, DynamoDB \\
-\textbf{Tools:} GitHub, Linux, Vim, Tmux, Docker, CMake, Valgrind, Clang-Tidy
+\textbf{Tools:} GitHub, Linux, Vim, Tmux, Docker, CMake, vcpkg, Valgrind, Clang (Tidy/Format)
 
 %-------------------------
 \section*{
 TECHNICAL PROJECTS 
 {\normalfont\normalsize\color{black}\underline{\href{https://github.com/NicholasSobchak}{GitHub}}}
 }
-\noindent\textbf{QuickQuill} -- \textit{C++17, Crow, SQLite3, Catch2; JavaScript, Node.js, Vite} \hfill Dec 2025 -- Present
+\noindent\textbf{QuickQuill} -- \textit{C++17, Crow, SQLite3, Catch2; JavaScript, Vite; Docker} \hfill Dec 2025 -- Present
 \vspace{-2pt} % reduce space between heading and bullets
 \begin{itemize}[label=\texttt{\textbf{>}}]
-  \item Built a 1.4 million word dictionary API with a Trie-based backend in C++, supporting a \texttt{\textbf{sub-XXms}} autocomplete feature. Developed a RESTful backend using Crow web framework to serve web-based clients \textbf{(LINK HERE)}.
-  \item Populated SQL database with Python scripts, and designed a database class for real-time data management and optimized database queries. 
-  \item Implemented in-memory caching, reducing repeated query latency from $>200$ms to $<0.18$ms ($\sim$1350x speedup) for popular queries.
-  \item Engineered a memory-safe Trie backend with smart pointers. Created automated unit \& E2E tests in CI/CD pipeline (GitHub Actions).
+  \item Built a \texttt{1.2} million word dictionary API with a Trie-based backend in C++, supporting a \texttt{\textbf{sub-XXms}} autocomplete feature. Created a RESTful API and implemented logging using Crow framework \underline{\href{https://quickquill.ink/}{QuickQuill}}.
+  \item Implemented in-memory caching, reducing repeated query latency from \url{~}\texttt{200ms} to \texttt{<0.18ms}. Prevented race conditions with \texttt{std::mutex} and \texttt{std::scoped\_lock}.
+  \item Made the Trie \& Database backend memory-safe with \texttt{std::unique\_ptr}, and handled Crow multithreading by managing database access with \texttt{thread\_local} for thread safety. 
+  \item Created unit \& integration tests using Catch2 framework, automated in a CI/CD pipeline (GitHub Actions).
+  \item Dockerized and deployed the application on google cloud vps for persistent hosting reverse proxy with nginx.
 \end{itemize} 
 
 %-------------------------
